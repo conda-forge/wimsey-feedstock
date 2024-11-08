@@ -1,5 +1,5 @@
 {% set name = "wimsey" %}
-{% set version = "0.2.1" %}
+{% set version = "0.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/wimsey-{{ version }}.tar.gz
-  sha256: cfe25e5ef85461cf0c37ef38b39ae375b0f14109cb285e006262d4dad2991b3f
+  sha256: 2a0cfb290282881e964fec781944d8affe9b2153eaf1c66b8887eb803ed99db4
 
 build:
   noarch: python
