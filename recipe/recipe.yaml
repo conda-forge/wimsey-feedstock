@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: wimsey
-  version: "0.8.1"
+  version: "0.9.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/wimsey-${{ version }}.tar.gz
-  sha256: 250f6c958ba31b240375dbfb0b16b430a8fdffbc3b97d029471763a400427142
+  sha256: 2ae9a16f5ac747a64fa3b3add0d95f69744c7d5f0edaf9081c8048aeee94ec72
 
 build:
   number: 0
