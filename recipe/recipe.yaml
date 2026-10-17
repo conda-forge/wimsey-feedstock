@@ -20,11 +20,11 @@ build:
 requirements:
   host:
     - python ${{ python_min }}.*
-    - hatchling
+    - flit-core >=3.2,<4
     - pip
   run:
     - python >=${{ python_min }}
-    - narwhals >=1.10.0
+    - narwhals >=2.0.0
     - fsspec >=2024.10.0
 
 tests:
