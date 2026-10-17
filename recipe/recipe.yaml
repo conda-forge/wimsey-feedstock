@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: wimsey
-  version: "1.0.2"
+  version: "1.1.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/wimsey-${{ version }}.tar.gz
-  sha256: 5220b61efe6038e2c43ba961dcc3d64773a00dc147eec03f4d92d2e5f93b9dde
+  sha256: 7f83faa33d04846a660be7fbd6337ba66cad153a69f0bcac603080e2d976c634
 
 build:
   number: 0
@@ -20,11 +20,11 @@ build:
 requirements:
   host:
     - python ${{ python_min }}.*
-    - hatchling
+    - flit-core >=3.2,<4
     - pip
   run:
     - python >=${{ python_min }}
-    - narwhals >=1.10.0
+    - narwhals >=2.0.0
     - fsspec >=2024.10.0
 
 tests:
